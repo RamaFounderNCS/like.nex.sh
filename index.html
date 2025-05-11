@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Deface by MR.M05T3R - NEWBIE CYBER SECURITY" />
+  <meta name="author" content="MR.M05T3R" />
+  <title>HACKED BY MR.M05T3R</title>
+  <link rel="icon" href="logo-ncs.jpg" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier New', monospace;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 0, 0, 0.04),
+        rgba(255, 0, 0, 0.04) 1px,
+        transparent 1px,
+        transparent 2px
+      );
+      z-index: 0;
+    }
+
+    header, .crew, footer {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+    }
+
+    .glitch {
+      font-size: 2.5rem;
+      font-weight: bold;
+      position: relative;
+      color: white;
+      animation: glitch 1.5s infinite;
+    }
+
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      width: 100%;
+      left: 0;
+    }
+
+    .glitch::before {
+      color: red;
+      top: -2px;
+      animation: glitchTop 1.5s infinite;
+    }
+
+    .glitch::after {
+      color: cyan;
+      top: 2px;
+      animation: glitchBottom 1.5s infinite;
+    }
+
+    @keyframes glitch {
+      0%, 100% { transform: none; }
+      50% { transform: translate(2px, -2px); }
+    }
+
+    @keyframes glitchTop {
+      0% { clip-path: inset(0 0 90% 0); }
+      50% { clip-path: inset(30% 0 30% 0); }
+      100% { clip-path: inset(0 0 90% 0); }
+    }
+
+    @keyframes glitchBottom {
+      0% { clip-path: inset(90% 0 0 0); }
+      50% { clip-path: inset(40% 0 20% 0); }
+      100% { clip-path: inset(90% 0 0 0); }
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: red;
+    }
+
+    .typing {
+      font-size: 1rem;
+      color: #ccc;
+      margin: 20px auto;
+      width: fit-content;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid white;
+      animation: typing 4s steps(50) forwards, blink 0.8s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    .logo {
+      width: 200px;
+      margin: 30px auto;
+      border-radius: 10px;
+      border: 2px solid red;
+    }
+
+    .info-box {
+      background: #111;
+      border: 1px solid #444;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px auto;
+      max-width: 400px;
+      font-size: 0.9rem;
+      color: #0ff;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      border: 2px solid red;
+      background: #000;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .contact-btn:hover {
+      background: red;
+      color: #000;
+    }
+
+    .crew {
+      font-size: 0.9rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    footer {
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .glitch { font-size: 1.6rem; }
+      .typing { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body onclick="playAudio()">
+  <header>
+    <div class="glitch" data-text="HACKED BY MR.M05T3R">HACKED BY MR.M05T3R</div>
+    <div class="subtitle">FOUNDER - NEWBIE CYBER SECURITY</div>
+    <div class="typing">Selamat, website anda telah diretas.</div>
+    <img src="logo-ncs.jpg" alt="NCS Logo" class="logo" />
+
+    <div class="info-box">
+      <div><strong>IP Anda:</strong> <span id="ip">Memuat...</span></div>
+      <div><strong>Waktu:</strong> <span id="clock">--:--:--</span></div>
+      <div><strong>Perangkat:</strong> <span id="device">Mendeteksi...</span></div>
+    </div>
+
+    <a href="mailto:offcncs@gmail.com" class="contact-btn">Contact Admin NCS</a>
+    <audio id="audio" src="https://github.com/defacemoster/audio/raw/refs/heads/main/Karera" preload="auto"></audio>
+  </header>
+
+  <section class="crew">
+    <b>SUPPORT:</b><br>
+    MR.M05T3R - SUMOONID - L0N3C1PH3R - GHOSTCLONET77 - FAKEWORLD - INDRA XPLOIT - N0B1T4 - ABAH LASKAR<br>
+    DORAEMON CYBER TEAM - JAVA CYBER ARMY - GARUDA TEAM DDOS - KELUARGA BESAR CYBER ISLAM INDONESIA - SURABAYAXPLOIT - THE DARK UNIT CYBER
+  </section>
+
+  <footer>
+    &copy; 2025 MR.M05T3R - NEWBIE CYBER SECURITY
+  </footer>
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById("audio");
+      audio.play().catch(() => {});
+    }
+
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    fetch("https://api.ipify.org?format=json")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("ip").textContent = data.ip;
+      })
+      .catch(() => {
+        document.getElementById("ip").textContent = "Tidak Terdeteksi";
+      });
+
+    const ua = navigator.userAgent.toLowerCase();
+    const isMobile = /android|iphone|ipad|mobile/.test(ua);
+    document.getElementById("device").textContent = isMobile ? "Smartphone" : "Komputer/Laptop";
+  </script>
+</body>
+</html>
